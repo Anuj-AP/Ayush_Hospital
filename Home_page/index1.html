@@ -1,0 +1,162 @@
+
+<!-- Edited by Harshit -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>AYUSH Hospital Finder</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">AYUSH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="contact.html" target="_blank">Contact Us</a>
+                </li> -->
+            </ul>
+            <!-- <form class="form-line">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">     
+                <button class="btn btn-light my-sm-0" type="submit">Search</button>
+                </form> -->
+        </div>
+        <div class="mx-2">
+            <button class="btn btn-warning"><a href="http://localhost/login">Login</a> </button>
+        </div>
+    </nav>
+
+    <nav class="navbar bg-success">
+        <!-- Navbar content -->
+    </nav>
+<script type="text/javascript">
+	window.onload = function() {
+		document.getElementById('navigate').classList.add('active');
+	};
+</script>
+    <center>
+            
+
+    <!-- Below is the script for voice recognition and conversion to text-->
+    <script>
+        function record() {
+            var recognition = new webkitSpeechRecognition();
+            // recognition.lang = "en-GB";
+            recognition.lang = "en";
+
+            recognition.onresult = function(event) {
+                // console.log(event);
+                document.getElementById('searchBox').value = event.results[0][0].transcript;
+            }
+            recognition.start();
+
+        }
+    </script>
+            </div></center>
+
+            <!-- <div id='myMap' style='width: 450px; height: 400px; overflow: hidden;'></div>
+            <script type='text/javascript'>
+                function loadMapScenario() {
+                    var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {});
+                    Microsoft.Maps.loadModule('Microsoft.Maps.Search', function () {
+                        var searchManager = new Microsoft.Maps.Search.SearchManager(map);
+                        var latitude = document.getElementById('lat').value;
+                        var longitude = document.getElementById('lon').value;
+                        var reverseGeocodeRequestOptions = {
+                            location: new Microsoft.Maps.Location(latitude, longitude),
+                            callback: function (answer, userData) {
+                                map.setView({ bounds: answer.bestView });
+                                map.entities.push(new Microsoft.Maps.Pushpin(reverseGeocodeRequestOptions.location));
+                                document.getElementById('printoutPanel').innerHTML = answer.address.formattedAddress;
+                            }
+                        };
+                        searchManager.reverseGeocode(reverseGeocodeRequestOptions);
+                    });
+                    
+                }
+            </script> -->
+            <!-- <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AvFOcTpieFmuKtLTA9MTUo8SpnOCuSO0tDPwYPa3jvrLfYQ0ZefZtHb0QVaGhAz0&callback=loadMapScenario' async defer></script> -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pic1.jpg" class="d-block w-100" alt="..." style="height: 500px; object-fit: contain;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Update Your Hospital Details</h2>
+                    <p style="font-size: 25px;">And help people get Right Treatment at Right Time!!!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pic2.jpg" class="d-block w-100" alt="..." style="height: 500px; object-fit: contain;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pic3.jpg" class="d-block w-100" alt="..." style="height: 500px; object-fit: contain;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+            <a href="https://www.ayush.gov.in/" target="_blank"> Ministry of AYUSH (Govt. of India)</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

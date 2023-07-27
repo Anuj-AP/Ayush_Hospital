@@ -1,0 +1,37 @@
+<!-- include header -->
+<%-include('include/_headerClient')%>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+      
+
+      <!-- Form Handling -->
+      <form action="/" method="post">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Covid Beds</th>
+              <th>Oxygen Cylinders</th>
+              <th>Rates</th>
+              <th>Cashless Insurance</th>
+              <th>Surgeon Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%-include('include/_clientshow')%>
+          </tbody>
+        </table>
+      </form>
+      <!-- /Form Handling -->
+    </div>
+  </main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%-include('include/_footer')%>
+<!-- /include footer -->

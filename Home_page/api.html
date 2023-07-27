@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div>post title: <span id="spanId"></span></div>
+    <script>
+      async function fillTheTitle() {
+        const post = await fetch("https://dev.virtualearth.net/REST/v1/LocalSearch/?query=coffee&userLocation=47.602038,-122.333964&key=AvAl_tKOVK4sC0-L2DI2o0OmQr3fMi367fKMEp34TW_IvoiBqhRVz9SPoSmK6Ocm").then((res) => res.json());
+        document.getElementById("spanId").innerText = resources.Address;
+      }
+      fillTheTitle();
+    </script>
+  </body>
+</html>

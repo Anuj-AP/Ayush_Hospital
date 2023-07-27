@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Staff</title>
+    <link rel="stylesheet" href="contact_styles.css">
+    <script src="https://kit.fontawesome.com/dce9face77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Contact Us -->
+
+    <div class="contactus-container" id="contactus">
+        <div class="container">
+            <h1 class ="contactus-heading">Contact Us</h1>
+            <h3 class="contactus-sub-heading">
+                Questions, Thoughts, or any Feedback?
+            </h3>
+            <div class="contactus-form-container">
+                <form class="form" action="https://formspree.io/f/xpzgwead" method="post">
+                    <div class="formfield-container">
+                        <input class="formfield" type="text" name="name" id="" placeholder="Enter your name"/>
+                    </div>
+                    <div class="formfield-container">
+                        <input class="formfield" type="email" name="email" id="" placeholder="Enter your email address"/>
+                    </div>
+                    <div class="formfield-container">
+                        <input class="formfield" type="text" name="subject" id="" placeholder="Enter your subject"/>
+                    </div>
+                    <div class="formfield-container">    
+                        <textarea name="message" id="" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter your message"></textarea>    
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-pink" id="submit-btn">
+                            Send Message <i class="submit-icon fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

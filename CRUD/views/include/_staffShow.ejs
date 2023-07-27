@@ -1,0 +1,17 @@
+<% for(var i=0; i<users.length; i++) { %>
+    <tr>
+      <td><%= i+1 %></td>
+      <td><%= users[i].name %></td>
+      <td><a href="<%= users[i].location %>" target="_blank" >Get Directions</a></td>
+      <td><%= users[i].covid_beds %></td>
+      <td><%= users[i].oxygen_cylinders %></td>
+      <td><%= users[i].rates %></td>
+      <td><%= users[i].cashless_insurance %></td>
+      <td><%= users[i].surgeon %></td>
+      <td>
+        <a href="/update-user?id=<%= users[i]._id %>" class="btn border-shadow update">
+          <span class="text-gradient"><i class="fa-solid fa-pen-to-square"></i></span>
+        </a>
+      </td>
+    </tr>
+    <% } %>

@@ -1,0 +1,42 @@
+<!-- include header -->
+  <%-include('include/_header')%>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+      <div class="box-nav d-flex justify-between">
+        <a href="/add-user" class="border-shadow">
+          <span class="text-gradient">New Hospital <i class="fa-solid fa-hospital"></i></span>
+        </a>
+      </div>
+
+      <!-- Form Handling -->
+      <form action="/" method="post">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Location</th>
+              <th>Covid Beds</th>
+              <th>Oxygen Cylinders</th>
+              <th>Rates</th>
+              <th>Cashless Insurance</th>
+              <th>Surgeon Availability</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <%-include('include/_show')%>
+          </tbody>
+        </table>
+      </form>
+      <!-- /Form Handling -->
+    </div>
+  </main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%-include('include/_footer')%>
+<!-- /include footer -->

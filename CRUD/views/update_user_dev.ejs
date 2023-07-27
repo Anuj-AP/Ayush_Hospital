@@ -1,0 +1,86 @@
+<!-- include header -->
+<%-include('include/_header')%>
+<!-- /include header -->
+
+  <!-- Main Site -->
+  <main id="site-main">
+    <div class="container">
+      <div class="box-nav d-flex justify-between">
+        <div class="filter">
+          <a href="/"><i class="fas fa-angle-double-left"></i> All Hospitals dev</a>
+        </div>
+      </div>
+      <div class="form-title text-center">
+        <h2 class="text-dark">Update Hospital</h2>
+        <span class="text-light">Update the Hospital Details</span>
+      </div>
+
+      <!-- Add User Form -->
+            <!-- Form Handling -->
+            <form method="post" id="update_user">
+              <div class="new_user">
+                <div class="form-group">
+                  <label for="name" class="text-light">Name</label>
+                  <input type="hidden" name="id" value="<%= user._id %>">
+                  <input type="text" name="name" value="<%= user.name %>" placeholder="Enter Name of Hospital">
+                </div>
+      
+                <div class="form-group">
+                  <label for="location" class="text-light">Location</label>
+                  <input type="text" name="location" value="<%= user.location %>" placeholder="Enter Location of Hospital">
+                </div>
+      
+                <div class="form-group">
+                  <label for="covid_beds" class="text-light">Covid Beds</label>
+                  <input type="text" name="covid_beds" value="<%= user.covid_beds %>" placeholder="Enter Number of Covid Beds left">
+                </div>
+      
+                <div class="form-group">
+                  <label for="rates" class="text-light">Rates</label>
+                  <input type="text" name="rates" value="<%= user.rates %>" placeholder="Enter Rates of Hospital">
+                </div>
+      
+                <div class="form-group">
+                  <label for="oxygen_cylinders" class="text-light">Oxygen Cylinders</label>
+                  <input type="text" name="oxygen_cylinders" value="<%= user.oxygen_cylinders %>" placeholder="Enter Number of Oxygen Cylinders left">
+                </div>
+      
+                <div class="form-group">
+                  <label for="cashless_insurance" class="text-light">Cashless Insurance</label>
+                  <div class="radio inline">
+                      <input type="radio" id="radio-2" name="cashless_insurance" value="Yes" <%= user.cashless_insurance == 'Yes'?'checked' : '' %> >
+                      <label for="radio-2" class="radio-label">Yes</label>
+                  </div>
+                  <div class="radio inline">
+                      <input type="radio" id="radio-3" name="cashless_insurance" value="No" <%= user.cashless_insurance == 'No'?'checked' : '' %> >
+                      <label for="radio-3" class="radio-label">No</label>
+                  </div>
+                </div>
+      
+                <div class="form-group">
+                  <label for="surgeon" class="text-light">Surgeon Availability</label>
+                  <div class="radio inline">
+                      <input type="radio" id="radio-4" name="surgeon" value="Available" <%= user.surgeon == 'Available'?'checked' : '' %> >
+                      <label for="radio-4" class="radio-label">Available</label>
+                  </div>
+                  <div class="radio inline">
+                      <input type="radio" id="radio-5" name="surgeon" value="Not Available" <%= user.surgeon == 'Not Available'?'checked' : '' %> >
+                      <label for="radio-5" class="radio-label">Not Available</label>
+                  </div>
+                </div>
+      
+                <div class="form-group">
+                  <button type="submit" class="btn text-dark update">Update Hospital</button>
+                </div>
+      
+              </div>
+            </form>
+            <!-- /Form Handling -->
+
+    </div>
+  </main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%-include('include/_footer')%>
+<!-- /include footer -->

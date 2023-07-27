@@ -1,0 +1,60 @@
+      <!-- Form Handling -->
+      <form action="/api/users" method="POST" id="add_user">
+        <div class="new_user">
+          <div class="form-group">
+            <label for="name" class="text-light">Name</label>
+            <input type="hidden" name="id" id="">
+            <input type="text" name="name" value="" placeholder="Enter Name of Hospital">
+          </div>
+
+          <div class="form-group">
+            <label for="location" class="text-light">Location</label>
+            <input type="text" name="location" value="" placeholder="Enter Location of Hospital">
+          </div>
+
+          <div class="form-group">
+            <label for="covid_beds" class="text-light">Covid Beds</label>
+            <input type="text" name="covid_beds" value="" placeholder="Enter Number of Covid Beds left">
+          </div>
+
+          <div class="form-group">
+            <label for="rates" class="text-light">Rates</label>
+            <input type="text" name="rates" value="" placeholder="Enter Rates of Hospital">
+          </div>
+
+          <div class="form-group">
+            <label for="oxygen_cylinders" class="text-light">Oxygen Cylinders</label>
+            <input type="text" name="oxygen_cylinders" value="" placeholder="Enter Number of Oxygen Cylinders left">
+          </div>
+
+          <div class="form-group">
+            <label for="cashless_insurance" class="text-light">Cashless Insurance</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-2" name="cashless_insurance" value="Yes" >
+                <label for="radio-2" class="radio-label">Yes</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-3" name="cashless_insurance" value="No" >
+                <label for="radio-3" class="radio-label">No</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="surgeon" class="text-light">Surgeon Availability</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="surgeon" value="Available" >
+                <label for="radio-4" class="radio-label">Available</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="surgeon" value="Not Available" >
+                <label for="radio-5" class="radio-label">Not Available</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn text-dark update">Add Hospital</button>
+          </div>
+
+        </div>
+      </form>
+      <!-- /Form Handling -->
